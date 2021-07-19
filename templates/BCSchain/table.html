@@ -1,0 +1,16 @@
+{% extends 'BCSchain/index.html' %}
+
+{% block content %}
+{% for el in bk %}
+  <tr>
+     <th>{{ el.id }}</th>
+     <td>{{ el.block_height }}</td>
+     <td>{{ el.block_hash }}</td>
+     <td>{{ el.block_time }}</td>
+     <td>{{ el.block_address }}</td>
+     <td>{{ el.block_numbers }}</td>
+  </tr>
+
+
+{% endfor %}
+{% endblock %}
